@@ -38,4 +38,11 @@ public class FizzbuzzTest {
         assertEquals("buzz", Fizzbuzz.answer(x));
     }
 
+    @Test
+    public void test入力値6の時出力値fizz() {
+        int x = 6;
+        Fizzbuzz.answer(x);
+        assertEquals("fizz", Fizzbuzz.answer(x));
+    }
+
 }

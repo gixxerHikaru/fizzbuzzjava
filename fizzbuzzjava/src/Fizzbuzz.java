@@ -1,11 +1,14 @@
 public class Fizzbuzz {
     static String answer(int x) {
-        String answer;
-        answer = switch (x) {
-            case 5 -> "buzz";
-            case 3 -> "fizz";
-            default -> Integer.toString(x);
-        };
-        return answer;
+        if(x == 5){
+            return "buzz";
+        }
+        else if(x%3 == 0){
+            return "fizz";
+        }
+        else {
+            return Integer.toString(x);
+        }
+
     }
 }
