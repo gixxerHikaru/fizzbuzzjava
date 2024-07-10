@@ -45,4 +45,32 @@ public class FizzbuzzTest {
         assertEquals("fizz", Fizzbuzz.answer(x));
     }
 
+    @Test
+    public void test入力値7の時出力値7() {
+        int x = 7;
+        Fizzbuzz.answer(x);
+        assertEquals("7", Fizzbuzz.answer(x));
+    }
+
+    @Test
+    public void test入力値8の時出力値8() {
+        int x = 8;
+        Fizzbuzz.answer(x);
+        assertEquals("8", Fizzbuzz.answer(x));
+    }
+
+    @Test
+    public void test入力値9の時出力値fizz() {
+        int x = 9;
+        Fizzbuzz.answer(x);
+        assertEquals("fizz", Fizzbuzz.answer(x));
+    }
+
+    @Test
+    public void test入力値10の時出力値buzz() {
+        int x = 10;
+        Fizzbuzz.answer(x);
+        assertEquals("buzz", Fizzbuzz.answer(x));
+    }
+
 }
